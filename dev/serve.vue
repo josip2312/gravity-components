@@ -13,6 +13,6 @@ export default defineComponent({
 
 <template>
   <div id="app">
-    <gravity-components-sample />
+    <NButton>Label</NButton>
   </div>
 </template>
