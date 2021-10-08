@@ -1,0 +1,116 @@
+@use "../abstracts/" as *;
+
+* {
+	--font-primary-1-dark: hsl(0, 0%, 94%);
+	--font-primary-2-dark: hsla(0, 0%, 94%, 0.6);
+	--font-primary-3-dark: hsla(0, 0%, 94%, 0.3);
+	--font-secondary-1-dark: hsl(210, 6%, 13%);
+	--font-secondary-2-dark: hsla(210, 6%, 13%, 0.6);
+	--font-secondary-3-dark: hsla(210, 6%, 13%, 0.3);
+
+	--border-1-dark: rgba(255, 255, 255, 0.05);
+
+	--elevation-1-dark: 0 10px 20px 0 hsla(0, 0%, 0%, 0.5);
+	--elevation-2-dark: 0 20px 40px 0 hsla(0, 0%, 0%, 0.5);
+
+	--font-primary-1-light: hsl(210, 6%, 13%);
+	--font-primary-2-light: hsla(210, 6%, 13%, 0.6);
+	--font-primary-3-light: hsla(210, 6%, 13%, 0.3);
+	--font-secondary-1-light: hsl(0, 0%, 94%);
+	--font-secondary-2-light: hsla(0, 0%, 94%, 0.6);
+	--font-secondary-3-light: hsla(0, 0%, 94%, 0.3);
+
+	--border-1-light: rgba(0, 0, 0, 0.05);
+
+	--elevation-1-light: 0 10px 20px 0 hsla(0, 0%, 0%, 0.2);
+	--elevation-2-light: 0 20px 40px 0 hsla(0, 0%, 0%, 0.2);
+
+	--scrollbar-dark: rgba(255, 255, 255, 0.25);
+	--scrollbar-light: rgba(0, 0, 0, 0.4);
+}
+
+// overwrite any variable in a theme file
+:root {
+	--positive: #388e3c;
+	--negative: #e53935;
+	--neutral: #ffc107;
+
+	--font-primary-1: var(--font-primary-1-dark);
+	--font-primary-2: var(--font-primary-2-dark);
+	--font-primary-3: var(--font-primary-3-dark);
+	--font-secondary-1: var(--font-secondary-1-dark);
+	--font-secondary-2: var(--font-secondary-2-dark);
+	--font-secondary-3: var(--font-secondary-3-dark);
+
+	--theme-600: #121314;
+	--theme-500: #1a1c1d;
+	--theme-400: #242628;
+	--theme-300: #2c2e30;
+	--theme-200: #3f4144;
+	--theme-100: #4f5157;
+
+	--border-1: var(--border-1-dark);
+
+	--primary: #1565c0;
+	--primary-rgb: 21, 101, 192;
+	--secondary: #ffc107;
+	--secondary-rgb: 255, 193, 7;
+
+	--overlay-modal: hsla(210, 5%, 7%, 0.7);
+	--overlay: hsla(210, 5%, 7%, 0.7);
+	--overlay-hover: hsla(0, 0%, 100%, 0.08);
+	--overlay-pressed: hsla(0, 0%, 0%, 0.16);
+
+	--elevation-1: var(--elevation-1-dark);
+	--elevation-2: var(--elevation-2-dark);
+
+	--scrollbar: var(--scrollbar-dark);
+
+	// reference for light themes
+	--theme-500-light: #dedede;
+	--theme-400-light: #f5f5f5;
+	--theme-300-light: #f7f7f7;
+	--theme-200-light: #fff;
+	--theme-100-light: #fff;
+
+	--secondary-light: #1a85ff;
+	--secondary-rgb-light: 26, 133, 255;
+
+	.light {
+		--font-primary-1: var(--font-primary-1-light);
+		--font-primary-2: var(--font-primary-2-light);
+		--font-primary-3: var(--font-primary-3-light);
+		--font-secondary-1: var(--font-secondary-1-light);
+		--font-secondary-2: var(--font-secondary-2-light);
+		--font-secondary-3: var(--font-secondary-3-light);
+
+		--border-1: var(--border-1-light);
+
+		--overlay: hsla(0, 0%, 100%, 0.5);
+		--overlay-hover: hsla(0, 0%, 0%, 0.1);
+		--overlay-pressed: hsla(0, 0%, 0%, 0.25);
+
+		--elevation-1: var(--elevation-1-light);
+		--elevation-2: var(--elevation-2-light);
+
+		--scrollbar: var(--scrollbar-light);
+	}
+
+	--container-width: 128rem; // 1280px
+
+	// BORDER RADIUS
+	--br-sm: 2px;
+	--br-md: 4px;
+
+	// SPACING
+	--spacing-xs: 0.2rem;
+	--btn-padding: 0.6em 1.6em;
+	--tag-padding: 0.2rem 0.8rem;
+
+	// FONT
+	--fs-200: 1.2rem;
+	--fs-300: 1.4rem;
+	--fs-400: 1.6rem;
+	--fs-500: 1.8rem;
+	--fs-600: 2.4rem;
+}

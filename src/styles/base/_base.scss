@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+
+body {
+	overflow-x: hidden;
+	color: var(--font-primary-1);
+	background-color: var(--bg-base, var(--theme-500));
+}
+
+button {
+	cursor: pointer;
+	padding: 0;
+}
+
+a {
+	color: inherit;
+}

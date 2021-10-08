@@ -1,13 +1,16 @@
 import { App, Plugin } from 'vue';
-
+import './styles/main.scss';
 // Import vue components
 import * as components from '@/lib-components/index';
 
 // install function executed by Vue.use()
-const install: Exclude<Plugin['install'], undefined> = function installGravityComponents(app: App) {
-  Object.entries(components).forEach(([componentName, component]) => {
-    app.component(componentName, component);
-  });
+const install: Exclude<
+	Plugin['install'],
+	undefined
+> = function installGravityComponents(app: App) {
+	Object.entries(components).forEach(([componentName, component]) => {
+		app.component(componentName, component);
+	});
 };
 
 // Create module definition for Vue.use()

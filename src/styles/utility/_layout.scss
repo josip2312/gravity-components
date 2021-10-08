@@ -1,0 +1,14 @@
+.spacing > * + * {
+	margin-top: 1em;
+}
+
+.container {
+	padding: 0 clamp(1rem, 5vw, 3rem);
+	width: 100%;
+	max-width: 120rem;
+	margin: 0 auto;
+}
+
+.heading {
+	margin-bottom: 2.5rem;
+}

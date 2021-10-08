@@ -1,0 +1,27 @@
+:root {
+	--bg-base: var(--theme-500);
+	--bg-button: var(--theme-200);
+	--bg-filter: var(--theme-500);
+	--bg-input: var(--theme-200);
+	--bg-modal: var(--theme-300);
+
+	--bg-tag-neutral: var(--theme-400);
+	--bg-tag-accent: var(--secondary);
+
+	--brand: var(--primary);
+	--accent: var(--secondary);
+	--card-overlay: var(--overlay);
+
+	.light {
+		--bg-base: var(--theme-300-light);
+		--bg-filter: var(--theme-300-light);
+		--bg-input: var(--theme-500-light);
+		--bg-modal: var(--theme-400-light);
+
+		--bg-tag-neutral: var(--theme-400-light);
+		--bg-tag-accent: var(--secondary);
+
+		--brand: var(--primary);
+		--accent: var(--secondary-light);
+	}
+}
